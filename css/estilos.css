@@ -1,0 +1,521 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    font-family: 'Questrial', Arial;
+    text-align: center;
+    display: flex;
+}
+main{
+    height: 100%;
+}
+section{
+    height: 100%;
+    padding: 4em 2em;
+    position: relative;
+    width: 100%;
+}
+header{
+    background-color: rgba(0,0,0,0.5);
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#logo{
+    background: url(../img/logos/logo3.png) no-repeat;
+    background-size: contain;
+    float: left;
+    height: 60px;
+    margin-left: 2.5em;
+    width: 300px;
+}
+nav{
+    float: right;
+    text-align: right;
+    width: 70%;
+}
+ul[id="barra"]{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul[id="barra"] li{
+    border-right: 0.03125em solid rgba(255,255,255,1);
+    display: inline-block;
+    padding: 0.5em 1em;
+}
+ul[id="barra"] li a{
+    color: rgba(255,255,255.1);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+ul[id="barra"] li a:hover, ul li a:active{
+    color: rgb(195, 155, 119);
+}
+ul[id="barra"] li:nth-last-of-type(1){
+    border-right: none;
+}
+#cover{
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform:translateX(-50%);
+    width: 100%;
+    height: 100%;
+}
+#inicio{
+    background-color: rgba(0,0,0,0.6);
+}
+#inicio img{
+    height: 360px;
+    left: 50%;
+    position: absolute;
+    top: 25%;
+    transform: translateX(-50%);
+    width: 360px;
+    border: 1px solid;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+}
+#inicio h2{
+    color: rgba(255,255,255,1);
+    font-family: 'Amaranth', Arial;
+    font-size: 2.5rem;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    top: 70%;
+}
+#inicio h2 span{
+    color: rgb(195, 155, 119);
+}
+#inicio p{
+    color: rgba(255,255,255,1);
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0 20%;
+    position: relative;
+    top: 57%;
+}
+#gira{
+    background-color: rgb(195, 155, 119);
+    margin: 0;
+    padding-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    height: fit-content;
+}
+table{
+    background-color: rgba(255, 252, 246, 0.568);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 70%;
+    color: rgb(196, 130, 72);
+}
+td{
+    padding-top: 40px;
+}
+#fecha{
+    font-family: 'Amatic';
+    font-size: 35px;
+}
+#ubicacion{
+    font-family: 'Courgette';
+    font-size: 30px;
+}
+table span{
+    font-family: serif;
+    font-size: 20px;
+    color:rgb(196, 91, 0)
+}
+table a{
+    text-decoration: none;
+}
+#albumes{
+    background-color: rgb(195, 155, 119);
+    margin-top: 0;
+    padding-top: 6%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    height: fit-content;
+}
+section[id="albumes"] #cuadro{
+    width: fit-content;
+    height: fit-content;
+    padding: 10% 10% 10% 10%;
+    background-color: rgba(255, 252, 246, 0.568);
+    border: none;
+}
+section[id="albumes"] article{
+    column-count: 3;
+    column-gap: 6em;
+    padding-top: 45px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+section[id="albumes"] article #imagen1{
+    background-image: url(../img/albumes/desierto.png);
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+}
+section[id="albumes"] article #imagen2{
+    background-image: url(../img/albumes/faces.png);
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+}
+section[id="albumes"] article #imagen3{
+    background-image: url(../img/albumes/viaje_al_universo.png);
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+}
+section[id="albumes"] article #imagen4{
+    background-image: url(../img/albumes/piscis.png);
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+}
+section[id="albumes"] article #imagen5{
+    background-image: url(../img/albumes/a_la_par.png);
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+}
+section[id="albumes"] article #imagen6{
+    background-image: url(../img/albumes/juego_perdido.png);
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+}
+section[id="albumes"] article div{
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    border: 1px solid black;
+    margin: 0 auto 1.5em
+}
+h3{
+  color: rgba(0, 0, 0, 0.795);
+  font-family: 'Amaranth', Arial;
+  font-size: 50px;
+  margin: auto;
+  width: 50%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 30px rgb(0, 0, 0);
+}
+h4{
+  color: rgba(0, 0, 0, 0.678);
+  font-family: 'Amaranth', Arial;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 30px rgb(0, 0, 0);
+}
+h5{
+    color: rgba(0, 0, 0, 0.678);
+    font-family: 'Amaranth', Arial;
+    font-size: 1rem;
+    margin: 10px 0;
+    text-shadow: 1px 1px 30px rgb(0, 0, 0);
+  }
+article a{
+    color:rgb(0, 0, 0);
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin: 20px auto auto;
+    padding: 1px;
+    text-decoration: none;
+    text-shadow: 1px 1px 30px rgb(194, 93, 5);
+    width: 10rem;
+}
+#galeria{
+    background-color: rgb(195, 155, 119);
+    padding-top: 6%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    height: fit-content;
+}
+a{
+    cursor: pointer;
+}
+ul[id="fotos"]{
+    margin-top: 120px;
+    list-style-type: none;
+    padding: 0;
+}
+ul[id="fotos"] li{
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    transition: all 0.3s;
+}
+ul[id="fotos"] li a img{
+    display: block;
+    width: 250px;
+    height: auto;
+}
+ul[id="fotos"] li a{
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+    margin: 0 6px 20px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    display: inline-block;
+}
+ul[id="fotos"] li:nth-child(4n+1){
+    transform: rotate(4deg);
+}
+ul[id="fotos"] li:nth-child(4n+3){
+    transform: rotate(-24deg);
+}
+ul[id="fotos"] li:nth-child(2n+2){
+    transform: rotate(14deg);
+}
+ul[id="fotos"] li:nth-child(5){
+    transform: rotate(-8deg);
+}
+ul[id="fotos"] li:nth-child(6){
+    transform: rotate(2deg);
+}
+ul[id="fotos"] li:hover{
+    transform: rotate(0deg) scale(1.7);
+    z-index: 101;
+}
+#contenedor-principal1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.90);
+}
+#contenedor-interno1{
+    width: 70%;
+    height: 95%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #f3f3f3;
+}
+#btn-cierra{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+}
+#btn-retrocede{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 3rem;
+}
+#btn-adelanta{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 3rem;
+}
+#videos{
+    background-color: rgb(195, 155, 119);
+    padding-top: 6%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    height: fit-content;
+}
+video{
+    width: 1120px;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+}
+#video1, #video2{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+}
+#shop{
+    background-color: rgb(195, 155, 119);
+    padding-top: 6%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    height: fit-content;
+}
+section[id="shop"] #cuadro{
+    margin-top: 50px;
+    margin-right: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 10px;
+    background-color: rgba(255, 252, 246, 0.568);
+    display: inline-block;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.7);
+
+}
+section[id="shop"] article{
+    padding: 0;
+    margin: 0;
+}
+section[id="shop"] article div{
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    margin: 0 auto 1.5em;
+}
+section[id="shop"] article #imagen1{
+    background-image: url(../img/shop/remera1.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen2{
+    background-image: url(../img/shop/remera3.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen3{
+    background-image: url(../img/shop/remera2.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen4{
+    background-image: url(../img/shop/remera4.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen5{
+    background-image: url(../img/shop/remera5.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen6{
+    background-image: url(../img/shop/buzo.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen7{
+    background-image: url(../img/shop/pantalon.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen8{
+    background-image: url(../img/shop/gorra1.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen9{
+    background-image: url(../img/shop/gorra2.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen10{
+    background-image: url(../img/shop/mochila.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen11{
+    background-image: url(../img/shop/cuaderno.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen12{
+    background-image: url(../img/shop/taza1.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen13{
+    background-image: url(../img/shop/taza2.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen14{
+    background-image: url(../img/shop/llavero.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen15{
+    background-image: url(../img/shop/cuadro1.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen16{
+    background-image: url(../img/shop/cuadro2.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen17{
+    background-image: url(../img/shop/collar1.png);
+    cursor: pointer;
+}
+section[id="shop"] article #imagen18{
+    background-image: url(../img/shop/collar2.png);
+    cursor: pointer;
+}
+#contacto{
+    background-color: rgb(195, 155, 119);
+    padding-top: 6%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    height: fit-content;
+}
+#formulario{
+    text-align: left;
+}
+#contacto input, select{
+    width: 500px;
+    color: rgb(0, 0, 0);
+    border-radius: 0.25em;
+    margin: 0.65em;
+    padding: 0.65em;
+    background-color: #fff;
+}
+#contacto input[type="submit"]{
+    background-color: rgb(195, 155, 119);
+    border: 0;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+form{
+    background-color: rgba(255, 252, 246, 0.568);
+    width: fit-content;
+    border-radius: 0.25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#redes{
+    margin-top: 100px;
+    margin-bottom: 25px;
+    background-color: rgba(255, 252, 246, 0.568);
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#redes a{
+    margin: 10px;
+}
+.arriba{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    background: url(../img/iconos/arriba.png);
+    right: 1em;
+    bottom: 1em;
+}
+footer{
+    background-color: rgba(0,0,0,0.6);
+    border-top: 0.5em solid rgb(195, 155, 119);
+    color: rgba(255,255,255,1);
+    font-size: 0.8rem;
+    font-weight: bolder;
+    padding: 0.4em 1em;
+    text-align: center;
+    width: 100%;
+}
